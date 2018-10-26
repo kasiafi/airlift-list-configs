@@ -12,7 +12,7 @@
 
     <groupId>io.github.kasiafi</groupId>
     <artifactId>airlift-list-configs</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
 
     <properties>
         <air.check.skip-license>true</air.check.skip-license>
