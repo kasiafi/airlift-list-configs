@@ -21,6 +21,10 @@ public class AirliftConfigsListing {
     private static final String ANNOTATION_DESC = "Lio/airlift/configuration/Config;";
 
     public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.err.println("Usage: airlift-list-configs <path-to-server-tar-gz>");
+            System.exit(1);
+        }
 
         try (FileInputStream fileIS = new FileInputStream(args[0]);
              GZIPInputStream tarGzIS = new GZIPInputStream(fileIS);
